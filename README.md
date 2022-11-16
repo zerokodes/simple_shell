@@ -1,6 +1,6 @@
 # Implementation of sh in C programming language
 
-## Overview
+## Overvie
 Simple Shell is an ALX pair project. The general goal of the project is to write a simple UNIX command interpreter. 
 ## Content
 * [Installation](#Installation)

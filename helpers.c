@@ -12,7 +12,7 @@
 void exec_cmd(char *c, char **cmd)
 {
 	pid_t newProcess;
-	pid_t newProcess;
+	int status;
 	char **envp = environ;
 
 	newProcess = fork();
@@ -57,7 +57,7 @@ char **tokenize(char *str)
 			io = 1;
 		}
 		else if (check_str(delim, *bufptr) == NULL && io == 1)
-			i0 = 0;
+			io = 0;
 		bufptr++;
 	}
 	tokens = malloc(sizeof(char *) * (tkn + 1));
